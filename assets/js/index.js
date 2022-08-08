@@ -16,6 +16,8 @@ menu.onclick = () => {
   document.querySelector(".nav").classList.toggle("active");
 };
 
+// Modal
+
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
@@ -41,6 +43,16 @@ closeModalButtons.forEach((button) => {
   });
 });
 
+document.addEventListener("keydown", function keyPress(e) {
+  e = e || window.e;
+  const modals = document.querySelectorAll(".modal.active");
+  if (e.keyCode === 27 || e.key === "Escape" || e.key === "Esc") {
+    modals.forEach((modal) => {
+      closeModal(modal);
+    });
+  }
+});
+
 function openModal(modal) {
   if (modal == null) return;
   modal.classList.add("active");
@@ -53,9 +65,13 @@ function closeModal(modal) {
   overlay.classList.remove("active");
 }
 
+// Rellax js Animation
+
 var rellax = new Rellax(".rellax", {
   center: true,
 });
+
+// Swiper js
 
 var swiper = new Swiper(".ctm_crsl", {
   grabCursor: true,

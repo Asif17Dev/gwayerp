@@ -16,17 +16,19 @@
     <main>
       <header id="header">
         <div class="header_layout container">
-          <a href="" class="logo"
-            ><img src="assets/images/logo_white.png" alt=""
-          /></a>
+          <a href="" class="logo">
+            <img src="assets/images/logo_white.png" alt="" />
+          </a>
           <ul class="nav">
-            <li class="nav_link"><a href="">home</a></li>
-            <li class="nav_link"><a href="">about</a></li>
-            <li class="nav_link"><a href="">products</a></li>
-            <li class="nav_link"><a href="">contact</a></li>
+            <li class="nav_link"><a href="./index.html#home">home</a></li>
+            <li class="nav_link"><a href="./index.html#about">about</a></li>
+            <li class="nav_link">
+              <a href="./index.html#products">products</a>
+            </li>
+            <li class="nav_link"><a href="contact.html">contact</a></li>
             <li class="nav_link"><a href="">blog</a></li>
             <li class="nav_link">
-              <button class="btn schldBtn" data-modal-target="#demo_modal">
+              <button class="btn" data-modal-target="#demo_modal">
                 Schedule Demo
               </button>
             </li>
@@ -38,10 +40,16 @@
       <!-- Contect Form -->
       <section id="contact">
         <div class="container">
+          <div class="mbl_heading">
+            <p class="eyebrow__text">get in touch</p>
+            <h2 class="section__heading">Contact</h2>
+          </div>
           <div class="wrapper">
             <div class="left">
-              <p class="eyebrow__text">get in touch</p>
-              <h2 class="section__heading">Contact</h2>
+              <div class="contact_heading">
+                <p class="eyebrow__text">get in touch</p>
+                <h2 class="section__heading">Contact</h2>
+              </div>
               <p class="contact-desc">
                 have an inquiry or feedback for us? <br />
                 fill out the form below to contact our team
@@ -93,7 +101,7 @@
                       target="_blank"
                       href="https://goo.gl/maps/2HJVKUNQHcBsfVGy8"
                     >
-                      <span class="text">
+                      <span class="text location">
                         13, Hanumar Koil Street,Radha Nagar, Chrompet, Chennai -
                         600 044, Tamilnadu, India.
                       </span>
@@ -157,7 +165,9 @@
                   <div class="form-group">
                     <label for="company-name">Company Name</label>
                     <div class="input-wrapper">
-                      <span class="icon"><i class="ri-user-fill"></i></span>
+                      <span class="icon">
+                        <i class="ri-building-2-fill"></i>
+                      </span>
                       <input
                         type="text"
                         id="company-name"
@@ -190,10 +200,9 @@
                       type="text"
                       id="message"
                       name="message"
-                      width="100%"
                     ></textarea>
                   </div>
-                  <button type="submit">Send</button>
+                  <button class="btn" type="submit">Send</button>
                 </form>
               </div>
             </div>
@@ -213,7 +222,6 @@
               </div>
               <p>
                 We produce what you think! <br />
-                <br />
                 Stay connected with us to streamline your business processes
                 better.
               </p>
@@ -224,9 +232,7 @@
                 <li><a href="#">Inventory Management</a></li>
                 <li><a href="#">Sales and Marketing</a></li>
                 <li><a href="#">Purchase</a></li>
-                <li>
-                  <a href="#">Finance & Accounting</a>
-                </li>
+                <li><a href="#">Finance & Accounting</a></li>
                 <li><a href="#">HR-Payroll</a></li>
                 <li><a href="#">SCM</a></li>
                 <li><a href="#">CRM</a></li>
@@ -283,7 +289,7 @@
           <div class="form-group">
             <label for="company-name">Company Name</label>
             <div class="input-wrapper">
-              <span class="icon"><i class="ri-user-fill"></i></span>
+              <span class="icon"><i class="ri-building-2-fill"></i></span>
               <input type="text" id="company-name" name="company-name" />
             </div>
           </div>
