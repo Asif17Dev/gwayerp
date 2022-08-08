@@ -65,7 +65,7 @@ function closeModal(modal) {
   overlay.classList.remove("active");
 }
 
-// Rellax js Animation
+// // Rellax js Animation
 
 var rellax = new Rellax(".rellax", {
   center: true,
