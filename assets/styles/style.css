@@ -8,7 +8,7 @@
   --black-1: #0d121f;
   --black-2: #121826;
   --white-1: #c6bed9;
-  --gray: #64718a;
+  --gray: #d9dee8;
   --grey: var(--gray);
   --hero-bg: #070219;
   --white: white;
@@ -381,7 +381,6 @@ header .header_layout .moblie__menu {
   perspective-origin: left bottom;
   transform-style: flat;
 }
-
 .mockup1 {
   background: radial-gradient(
     218.51% 281.09% at 100% 100%,
@@ -555,16 +554,15 @@ header .header_layout .moblie__menu {
   border-bottom: 1px dashed var(--black-2);
 }
 .aboutSection__img {
-  flex: 1;
+  flex: 0.4;
 }
 
 .aboutSection__TextWrapper {
   align-self: center;
-  flex: 1;
+  flex: 0.6;
 }
 
 .aboutSection__TextWrapper .paragraph_text {
-  /* max-width: 450px; */
   margin-bottom: 0.5rem;
 }
 .grid-images {
@@ -610,11 +608,12 @@ header .header_layout .moblie__menu {
   grid-gap: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  flex: 1;
+  flex: 0.4;
 }
 .about_us_info_grd .about_grd_item {
   text-align: center;
   background-color: var(--black-2);
+
   backdrop-filter: blur(10px);
   border-radius: 20px;
   display: flex;
@@ -716,11 +715,66 @@ header .header_layout .moblie__menu {
     grid-template-columns: 1fr 1fr;
   }
 }
+/* services  */
+/* .services {
+  padding-bottom: 100px;
+} */
+.services .lftAdCntnr {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 3rem;
+}
+.adCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+.adCard img {
+  height: 65px;
+  width: 65px;
+  margin-inline: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+  background-color: var(--black-2);
+  padding: 10px;
+  border-radius: 100%;
+  box-shadow: var(--box-shadow-2);
+}
+.adCard h3 {
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  margin: 10px 0;
+}
+.adCard p {
+  font-size: 16px;
+  color: var(--gray);
+}
 
 /* products Section */
 #products {
   padding: 100px 0;
+  position: relative;
+  overflow-x: hidden;
 }
+.bg_stripes {
+  position: absolute;
+  z-index: -1;
+
+  top: 200px;
+  left: 0;
+  right: 0;
+}
+.bg_stripes img {
+  width: 100%;
+}
+
 #products .section__heading {
   text-align: center;
 }
@@ -738,7 +792,7 @@ header .header_layout .moblie__menu {
   justify-content: center;
   max-width: 900px;
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   /* gap: 2rem; */
 }
 #product_info .item {
@@ -910,7 +964,6 @@ header .header_layout .moblie__menu {
   text-align: center;
 }
 #testimonial .ctm_crsl_cntr {
-  margin-top: 3rem;
   text-align: center;
 }
 #testimonial .ctm_crsl_cntr .swiper-slide img {
@@ -918,17 +971,12 @@ header .header_layout .moblie__menu {
   width: 120px;
   vertical-align: middle;
 }
-.testimonial__header {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
 #testimonial .testimoial__all_items {
-  padding: 50px 0;
+  padding: 50px 0 100px;
   overflow: hidden;
 }
 #testimonial .testimoial__item {
-  max-width: 600px;
+  max-width: 900px;
   margin-inline: auto;
   background-color: var(--black-2);
   padding: 25px 40px;
@@ -936,12 +984,30 @@ header .header_layout .moblie__menu {
   display: grid;
   gap: 20px;
 }
+.testimoial__item.swiper-slide {
+  filter: blur(4px);
+  opacity: 0.7;
+}
+.testimoial__item.swiper-slide-active {
+  filter: blur(0px);
+  opacity: 1;
+}
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+.testimonial__header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .testimonial__header img {
   width: 50px;
   height: 50px;
   object-fit: cover;
   object-position: center;
-  border-radius: 100px;
+  border-radius: 100%;
 }
 .testimonial__header .testimoial__name {
   font-size: 18px;
@@ -960,8 +1026,12 @@ header .header_layout .moblie__menu {
   background-color: var(--black-1);
   position: relative;
   color: var(--gray);
-  padding: 20px;
+  padding: 20px 0;
+  background: url(/assets/images/pattern-quotes.svg);
   border-radius: 0 12px 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 10% top;
+  background-size: 100px;
 }
 .testimoial__item_text::after {
   content: "";

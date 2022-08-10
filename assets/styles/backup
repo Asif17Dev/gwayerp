@@ -1,0 +1,255 @@
+#products { padding: 100px 0; position: relative; } .bg_stripes { position:
+absolute; z-index: -1; top: 100px; width: 100%; height: 200px; transform:
+skew(-10) rotate(-10deg); background: var(--darkBlue); } .bg_stripes .bg_stripe
+{ } #products .section__heading { text-align: center; } #products .eyebrow__text
+{ text-align: center; } #products .all-items, #product_info .all-items {
+margin-top: 5rem; } #products .item, #product_info .item { display: flex;
+align-items: center; justify-content: center; max-width: 900px; margin: 0 auto;
+margin-bottom: 150px; /* gap: 2rem; */ } #product_info .item { max-width: unset;
+} #products .item:nth-of-type(even), #product_info .item:nth-of-type(even) {
+flex-direction: row-reverse; } #products .item .left, #product_info .item .left
+{ flex: 1; } #products .item .right, #product_info .item .right { margin-left:
+-150px; flex: 1; background-color: var(--black-2); padding: 5rem 3rem;
+border-radius: 12px; box-shadow: 0px 0px 20px #00000028; z-index: 2; } #products
+.item:nth-of-type(even) .right, #product_info .item:nth-of-type(even) .right {
+margin-left: 0; } #products .item:nth-of-type(even) .left, #product_info
+.item:nth-of-type(even) .left { margin-left: -150px; } #products .item .left
+.img, #product_info .item .left .img { height: 450px; overflow: hidden;
+border-radius: 12px; box-shadow: 0px 0px 20px #00000028; overflow: hidden; }
+#products .item .left .img img, #product_info .item .left .img img { height:
+100%; width: 100%; object-fit: cover; transition: 0.3s ease transform; }
+#products .item:hover .left .img img, #product_info .item:hover .left .img img {
+transform: scale(1.05); } #products .item .right .project-title, #product_info
+.item .right .project-title { font-size: 25px; font-family: var(--font-poppins);
+margin-bottom: 10px; font-weight: 500; color: var(--white); } #products .item
+.right .project-sub-title, #product_info .item .right .project-sub-title {
+font-size: 16px; color: var(--white-1); margin-bottom: 20px; } #products .item
+.right .paragraph_text, #product_info .item .right .paragraph_text { color:
+var(--gray); margin-bottom: 30px; } .product_hero { position: relative; }
+.product_hero .product_hero_wpr { height: 80vh; width: 100%; position: relative;
+background-attachment: fixed !important; background-position: center !important;
+background-repeat: no-repeat !important; background-size: cover !important;
+display: flex; align-items: center; } .product_hero .product_hero_wpr::after {
+content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+background: var(--black-1); opacity: 0.8; } .product_info_text { z-index: 2; }
+.product_info_text h1 { max-width: unset; margin-bottom: 20px; }
+.product_info_text .paragraph_text { font-size: 18px; margin-bottom: 0.5rem;
+color: var(--white-1); } .product_info_text .btn { margin-top: 20px; }
+#product_info { padding: 100px 0; } @media only screen and (max-width: 768px) {
+#products { padding: 50px 0; } #products .item, #product_info .item {
+flex-direction: column; margin-bottom: 100px; } #products .item .left,
+#product_info .item .left { width: 100%; } #products .item .right, #product_info
+.item .right { margin-left: 0; width: 90%; margin-top: -150px; } #products
+.item:nth-of-type(even), #product_info .item:nth-of-type(even) { flex-direction:
+column; } #products .item:nth-of-type(even) .left, #product_info
+.item:nth-of-type(even) .left { margin-left: 0; } } @media only screen and
+(max-width: 450px) { #products .item .right .btn_Wpr { flex-direction: column; }
+#products .item .right .btn_Wpr a { width: 100%; text-align: center; }
+#product_info .item .right, #product_info .item .right { padding: 3rem 1.5rem; }
+.product_info_text { padding-right: 30px; } .product_info_text .paragraph_text {
+font-size: 15px; } }
+
+<div class="all-items">
+  <div class="item">
+    <div class="left">
+      <div class="img">
+        <img
+          src="https://images.pexels.com/photos/4487361/pexels-photo-4487361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="right">
+      <h2 class="project-title">Inventory Management</h2>
+      <!-- <h3 class="project-sub-title"></h3> -->
+      <p class="paragraph_text">
+        Get accurate stock details as stock trends are monitored.
+        <br />
+        Analysis on customer demands through the reports. <br />
+        Monitor stock in hand to satisfy customers.
+      </p>
+      <div class="btn_Wpr">
+        <a href="./inventory.html" class="btn btn_var_2 external-link">
+          <span>Know More</span>
+          <i class="ri-external-link-line"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="left">
+      <div class="img">
+        <img
+          src="https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="right">
+      <h2 class="project-title">Finance & Accounting Management</h2>
+      <p class="paragraph_text">
+        Helps to improvise the financial process <br />
+        Financial transactions made simpler and tracked <br />
+        Strategise the revenue and track the inflow and outflow Get
+      </p>
+      <div class="btn_Wpr">
+        <a href="#" class="btn btn_var_2 external-link">
+          <span>Know More</span>
+          <i class="ri-external-link-line"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="left">
+      <div class="img">
+        <img
+          src="https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="right">
+      <h2 class="project-title">Supply Chain Management</h2>
+      <p class="paragraph_text">
+        Key module to integrate customers & suppliers. <br />
+        Demand planning and management to satisfy customers. <br />
+        Track shipment & logistics information through reports.
+      </p>
+      <div class="btn_Wpr">
+        <a href="#" class="btn btn_var_2 external-link">
+          <span>Know More</span>
+          <i class="ri-external-link-line"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="left">
+      <div class="img">
+        <img
+          src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="right">
+      <h2 class="project-title">Sales & Marketing Management</h2>
+      <p class="paragraph_text">
+        Get qualified leads & stay ahead in industry. <br />
+        Pre-sales and sales activities to the simplest with clarity.<br />
+        Tracking sales returns as quality is more important.
+      </p>
+      <div class="btn_Wpr">
+        <a href="#" class="btn btn_var_2 external-link">
+          <span>Know More</span>
+          <i class="ri-external-link-line"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="left">
+      <div class="img">
+        <img
+          src="https://images.pexels.com/photos/8867435/pexels-photo-8867435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="right">
+      <h2 class="project-title">Customer Relationship Management</h2>
+      <p class="paragraph_text">
+        CRM integrates Sales & Marketing to gain uplifted revenues.
+        <br />
+        Customer-oriented service for fulfilment to increase sales.<br />
+        A customer-based process for maximizing profits.
+      </p>
+      <div class="btn_Wpr">
+        <a href="#" class="btn btn_var_2 external-link">
+          <span>Know More</span>
+          <i class="ri-external-link-line"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="left">
+      <div class="img">
+        <img
+          src="https://images.pexels.com/photos/7709252/pexels-photo-7709252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="right">
+      <h2 class="project-title">Human Resource & Payroll Management</h2>
+      <p class="paragraph_text">
+        Develop and improve the competitive wage rates for employees.
+        <br />
+        Security measures for the welfare of employees & employers.
+        <br />
+        Centralised platform to access the recruitment effectively to reduce
+        cost.
+      </p>
+      <div class="btn_Wpr">
+        <a href="#" class="btn btn_var_2 external-link">
+          <span>Know More</span>
+          <i class="ri-external-link-line"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="left">
+      <div class="img">
+        <img
+          src="https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="right">
+      <h2 class="project-title">Business Intelligence Management</h2>
+      <p class="paragraph_text">
+        Interactive dashboards for strategic forecasting to drive business.
+        <br />
+        Reliable decision making is possible without any risks.<br />
+        Provides real-time data for the owners to make better solutions to avoid
+        risks.
+      </p>
+      <div class="btn_Wpr">
+        <a href="#" class="btn btn_var_2 external-link">
+          <span>Know More</span>
+          <i class="ri-external-link-line"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="left">
+      <div class="img">
+        <img
+          src="https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="right">
+      <h2 class="project-title">Purchase Management</h2>
+      <p class="paragraph_text">
+        Easily manage the price change of stock <br />
+        The purchase order provides a precise record with stock and price
+        details.<br />
+        Avoid manual entries and save time on tracking.
+      </p>
+      <div class="btn_Wpr">
+        <a href="#" class="btn btn_var_2 external-link">
+          <span>Know More</span>
+          <i class="ri-external-link-line"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

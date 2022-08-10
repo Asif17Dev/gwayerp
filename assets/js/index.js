@@ -98,11 +98,14 @@ var swiper = new Swiper(".ctm_crsl", {
 var swiper = new Swiper(".testimoial__all_items", {
   effect: "coverflow",
   grabCursor: true,
-  loop: true,
   centeredSlides: true,
   slidesPerView: "auto",
-  spaceBetween: 40,
+  spaceBetween: 32,
   coverflowEffect: {
-    rotate: 50,
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2,
   },
+  loop: true,
 });
