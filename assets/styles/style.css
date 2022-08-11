@@ -773,7 +773,7 @@ header .header_layout .moblie__menu {
 }
 
 .ftr_mkup_wpr .mkup_dash {
-  border-radius: 12px;
+  border-radius: 6px;
   z-index: 2;
   margin-left: auto;
   width: 80%;
@@ -834,6 +834,9 @@ header .header_layout .moblie__menu {
 @media (max-width: 768px) {
   .services .lftAdCntnr {
     grid-template-columns: 1fr 1fr;
+  }
+  .ftr_mkup_wpr {
+    width: min(min(690px, 100% - 5vw));
   }
   .ftr_mkup_wpr > * {
     transform: rotateY(0deg) rotateX(0deg);
