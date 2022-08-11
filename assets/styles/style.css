@@ -793,8 +793,8 @@ header .header_layout .moblie__menu {
 }
 .ftr_mkup_wpr .mkup_icon {
   z-index: 3;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 80px;
+  max-height: 80px;
   position: absolute;
   right: -60px;
 }
@@ -802,11 +802,11 @@ header .header_layout .moblie__menu {
   top: 0;
 }
 .ftr_mkup_wpr .mkup_icon_2 {
-  top: 100px;
+  top: 70px;
 }
 
 .ftr_mkup_wpr .mkup_icon_3 {
-  top: 200px;
+  top: 140px;
 }
 .ftr_mkup_wpr > * {
   transform: rotateY(-20deg) rotateX(20deg);
@@ -841,6 +841,9 @@ header .header_layout .moblie__menu {
   .ftr_mkup_wpr > * {
     transform: rotateY(0deg) rotateX(0deg);
   }
+  .services:hover .ftr_mkup_wpr > .mkup_chart {
+    transform: translateX(0);
+  }
   .ftr_mkup_wpr .mkup_icon,
   .services:hover .ftr_mkup_wpr .mkup_icon {
     width: 45px;
@@ -861,11 +864,15 @@ header .header_layout .moblie__menu {
     top: 90px;
   }
 }
-
 @media (max-width: 600px) {
   .services .lftAdCntnr {
     grid-template-columns: 1fr;
   }
+  .ftr_mkup_wpr {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 400px) {
 }
 /* products Section */
 #products {
